@@ -18,7 +18,6 @@ public class Test {
         myhash.put("l", 12);
         myhash.put("m", 13);
 
-
         System.out.println("myhash.get(\"g\") :"+myhash.get("g"));
         System.out.println("myhash.size() :"+myhash.size());
         System.out.println("myhash.replace(\"m\", 20)  :"+myhash.replace("m", 20));
@@ -26,7 +25,6 @@ public class Test {
         System.out.println("myhash.containsKey(\"g\")  :"+myhash.containsKey("g"));
         System.out.println("myhash.remove(\"j\")  :"+myhash.remove("j"));
         System.out.println("myhash.show()");
-        myhash.show();
         myhash.clear();
         System.out.println("myhash.clear()");
         System.out.println("myhash.size() :"+myhash.size());
