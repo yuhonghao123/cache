@@ -19,12 +19,14 @@ public class MyHash {
     public void put(Object key,Object value) {
         number++;
         Node new_node = new Node(key,value);
-
         int code = hashcode(key.toString());
         int position = locate(code);
-
         LinkedList list_head = (LinkedList) array_head.get(position);
 
+        if (array_head.size()>8){
+            Node head = (Node) list_head.get(0);
+            remove(head.getKey());
+        }
         list_head.add(new_node);
     }
 
