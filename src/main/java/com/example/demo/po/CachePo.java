@@ -1,6 +1,6 @@
 package com.example.demo.po;
 
-import com.example.demo.service.impl.DelayItem;
+import com.example.demo.test.DelayItem;
 import lombok.Data;
 
 import javax.naming.TimeLimitExceededException;

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.test;
 
 public class StudyGuavaCache {
     public static void main(String[] args) throws InterruptedException {
