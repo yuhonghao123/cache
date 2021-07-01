@@ -28,5 +28,6 @@ public class LongestCommonPrefix {
             index++;
         }
         return str1.substring(0, index);
+
     }
 }
