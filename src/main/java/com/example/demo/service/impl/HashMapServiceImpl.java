@@ -31,4 +31,13 @@ public class HashMapServiceImpl<K,V> implements HashMapService<K,V> {
     public void clear(HashMap<K, V> hashMap) {
         hashMap.clear();
     }
+
+    @Override
+    public void putLRUCache(K key, V value, HashMap<K, V> hashMap, int size) {
+        Map.Entry<K, V> tail = hashMap.entrySet().iterator().next();
+        if (hashMap.size()>=size){
+            hashMap.remove(tail.getKey());
+        }
+        hashMap.put(key,value);
+    }
 }

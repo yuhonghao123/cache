@@ -13,4 +13,6 @@ public interface HashMapService<K,V> {
     long size(HashMap<K,V> hashMap);
 
     void clear(HashMap<K,V> hashMap);
+
+    void putLRUCache(K key, V value, HashMap<K,V> hashMap,int size);
 }
